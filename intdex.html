@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>The Angelo</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden md:overflow-x-visible">
+
+
+  <section id="home"> <!-- Home section end -->
+    <!-- Navbar -->
+    <a id="navbar-section" href="#"></a>
+    <header class="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
+      <nav class="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-4 h-4 bg-green-400 rounded-sm"></div>
+          <span class="text-xl font-semibold">The Angelo</span>
+        </div>
+        <ul class="flex gap-[40px]">
+          <a href="#home" class="text-green-500 font-medium cursor-pointer">Home</a>
+          <a href="#thebuilding" class="cursor-pointer hover:text-green-500">The Building</a>
+          <a href="#thearchtects" class="cursor-pointer hover:text-green-500">The Architects</a>
+          <a href="#amenities" class="cursor-pointer hover:text-green-500">Amenities</a>
+        </ul>
+
+        <!-- Right -->
+        <div class="flex items-center gap-4">
+          <a href="#contactform">
+            <button class="hidden md:block bg-green-400 px-4 py-2 rounded-lg text-sm">
+              Get In Touch
+            </button>
+          </a>
+
+          <!-- Mobile Button -->
+          <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-white z-50 flex-col hidden items-center justify-center gap-8 text-lg">
+
+      <button id="closeBtn" class="absolute top-6 right-6 text-2xl">✕</button>
+      <a href="#home">Home</a>
+      <a href="#building">The Building</a>
+      <a href="#architects">The Architects</a>
+      <a href="#amenities">Amenities</a>
+
+    </div>
+
+
+    <button class="mt-6 bg-green-400 px-6 py-2 rounded-lg">
+      Get In Touch
+    </button>
+    </div>
+
+    <!-- Page spacer -->
+    <div class="h-24"></div>
+
+
+    <!-- Hero -->
+    <section class="px-4 md:px-20 py-10 flex flex-col md:flex-row gap-10 items-center">
+      <div class="flex flex-col gap-8 md:flex-1">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-semibold mb-4">
+            Discover your <br> new home
+          </h1>
+          <p class="text-gray-600 md:text-lg">
+            A premier residential <br> experience awaits you
+          </p>
+        </div>
+        <img src="imagenary-design.avif" class="w-full max-w-xs rounded-xl">
+      </div>
+
+      <div class="md:flex-1">
+        <img src="big_building_image.avif" class="w-full max-w-xl rounded-xl">
+      </div>
+    </section>
+
+  </section> <!-- Home section end -->
+
+  <!-- Second -->
+
+  <section id="thebuilding"> <!-- The biulding section start -->
+
+    <section class="px-4 md:px-20 py-10 flex flex-col md:flex-row gap-10 items-center">
+      <div class="md:flex-1">
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+          Modern Living Meets <br> Timeless Design
+        </h2>
+        <p class="text-gray-600">
+          This is a space to share more about the business.
+        </p>
+      </div>
+
+      <div class="md:flex-1">
+        <img src="bed_image.avif" class="w-full max-w-xs rounded-xl">
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 pb-16">
+      <img src="image1.avif" class="rounded-xl">
+      <img src="image2.avif" class="rounded-xl">
+      <img src="image3.avif" class="rounded-xl">
+      <img src="image4.avif" class="rounded-xl">
+    </section>
+
+  </section> <!-- The biulding section end -->
+
+
+  <!-- Architects section -->
+
+  <section id="thearchtects"> <!-- The Archtecture section end -->
+
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+
+      <!-- BACKGROUND IMAGE -->
+      <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36"
+        class="absolute inset-0 w-full h-full object-cover grayscale" alt="" />
+
+      <!-- DARK OVERLAY -->
+      <div class="absolute inset-0 bg-white/60"></div>
+
+      <!-- CONTENT -->
+      <div class="reveal relative z-10 max-w-7xl px-4
+           grid grid-cols-1 md:grid-cols-2 gap-72 items-center">
+
+        <!-- LEFT -->
+        <div class="ml-12">
+          <p class="uppercase tracking-widest text-sm text-gray-600 mb-4">
+            The Architects
+          </p>
+
+          <h1 class="text-3xl md:text-3xl font-light leading-tight text-gray-900">
+            Visionary Design <br />
+            <span class="font-normal">by Slovad & Anna Arkovitch</span>
+          </h1>
+
+          <div class="mt-8 flex gap-6 text-3xl text-gray-800">
+            <span class="italic">S</span>
+            <span class="italic">A</span>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="text-gray-700 leading-relaxed max-w-md">
+          <p>
+            This is the space to introduce visitors to the business or <br> brand. Briefly explain who's behind it, what
+            it
+            does and <br> what makes it unique. Share its core values and what this <br> site has to offer.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- IMAGE SLIDER -->
+    <section class="bg-gray-200 py-24">
+      <div class="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-2 items-center gap-24">
+
+        <div class="relative flex items-center">
+
+          <button id="prevBtn" class="absolute left-2 z-10 bg-white p-2 rounded-full text-2xl">
+            ←
+          </button>
+
+          <div id="sliderContainer" class="w-full max-w-xl h-80 overflow-hidden rounded-3xl">
+
+            <div id="slider" class="flex h-full transition-transform duration-500 ease-in-out">
+
+              <!-- Wrapper div -->
+              <div class="w-full h-full flex-shrink-0">
+                <img src="image_5.avif" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-full h-full flex-shrink-0">
+                <img src="image_6.avif" class="w-full h-full object-cover">
+              </div>
+
+              <div class="w-full h-full flex-shrink-0">
+                <img src="image_7.avif" class="w-full h-full object-cover">
+              </div>
+
+            </div>
+          </div>
+
+          <button id="nextBtn" class="absolute right-2 z-10 bg-white p-2 rounded-full text-2xl">
+            →
+          </button>
+        </div>
+
+        <div>
+          <p class="uppercase text-sm mb-4">The Developer</p>
+          <h2 class="text-4xl font-light mb-6">
+            Trusted Excellence by <br>
+            <span class="font-medium">Conjavia Group</span>
+          </h2>
+          <p class="text-gray-600 max-w-md">
+            This is the space to introduce visitors to the business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex flex-col mt-16 ml-11">
+      <h2 class="text-2xl font-medium">Floor Plans</h2>
+      <p class="font-light">Tailored Layouts to Suit Every Lifestyle</p>
+    </div>
+
+    <!-- Bedroom 1 -->
+    <div class="border-b border-black pb-4">
+    </div>
+
+    <div class="py-8 px-8 flex justify-between">
+      <h1 class="text-xl md:text-3xl">1-Bedroom apartments</h1>
+      <button id="arrow-btn1" class="w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="w-8 h-8 text-black transition-transform duration-300" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div id="content1"
+      class="px-6 md:px-11 pb-11 flex flex-col md:flex-row gap-6 md:gap-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+      <img class="w-full md:w-2/4 rounded-2xl" src="bedroom-apartment.avif" alt="">
+      <div class="flex flex-col">
+        <h2 class="text-2xl mb-4 font-semibold">Cozy and Functional Living Spaces</h2>
+        <h1 class="mb-6">This is the space to describe the product. Write a short <br> overview that includes important
+          features,
+          pricing and <br>
+          other relevant info for a potential buyer. Consider adding <br> an image or video to show off the product and
+          entice <br>
+          visitors to make a purchase</h1>
+        <img class="w-2/6 mb-4" src="Artboard-image.avif" alt="">
+        <a class="underline"
+          href="https://docs.google.com/document/d/1QJDLgrRBgbERE9Ad2j_qh5aLjr8f7p9-YsUIPwbuv7c/edit?tab=t.0#heading=h.g6o9zaxdzvm8">Download
+          Plan</a>
+      </div>
+    </div>
+
+
+    <!-- Bedroom 2 -->
+    <div class="border-b border-black pb-4">
+    </div>
+
+    <div class="py-8 px-8 flex justify-between">
+      <h1 class="text-xl md:text-3xl">2-Bedroom apartments</h1>
+      <button id="arrow-btn2" class="w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="w-8 h-8 text-black transition-transform duration-300" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div id="content2"
+      class="px-6 md:px-11 pb-11 flex flex-col md:flex-row gap-6 md:gap-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+      <img class="w-full md:w-2/4 rounded-2xl" src="bedroom-apartment.avif" alt="">
+      <div class="flex flex-col">
+        <h2 class="text-2xl mb-4 font-semibold">Cozy and Functional Living Spaces</h2>
+        <h1 class="mb-6">This is the space to describe the product. Write a short <br> overview that includes important
+          features,
+          pricing and <br>
+          other relevant info for a potential buyer. Consider adding <br> an image or video to show off the product and
+          entice <br>
+          visitors to make a purchase</h1>
+        <img class="w-2/6 mb-4" src="Artboard-image.avif" alt="">
+        <a class="underline"
+          href="https://docs.google.com/document/d/1QJDLgrRBgbERE9Ad2j_qh5aLjr8f7p9-YsUIPwbuv7c/edit?tab=t.0#heading=h.g6o9zaxdzvm8">Download
+          Plan</a>
+      </div>
+    </div>
+
+
+    <!-- Bedroom 3 -->
+    <div class="border-b border-black pb-4">
+    </div>
+
+    <div class="py-8 px-8 flex justify-between">
+      <h1 class="text-xl md:text-3xl">3-Bedroom apartments</h1>
+      <button id="arrow-btn3" class="w-12 h-12">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          class="w-8 h-8 text-black transition-transform duration-300" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div id="content3"
+      class="px-6 md:px-11 pb-11 flex flex-col md:flex-row gap-6 md:gap-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+      <img class="w-full md:w-2/4 rounded-2xl" src="bedroom-apartment.avif" alt="">
+      <div class="flex flex-col">
+        <h2 class="text-2xl mb-4 font-semibold">Cozy and Functional Living Spaces</h2>
+        <h1 class="mb-6">This is the space to describe the product. Write a short <br> overview that includes important
+          features,
+          pricing and <br>
+          other relevant info for a potential buyer. Consider adding <br> an image or video to show off the product and
+          entice <br>
+          visitors to make a purchase</h1>
+        <img class="w-2/6 mb-4" src="Artboard-image.avif" alt="">
+        <a class="underline"
+          href="https://docs.google.com/document/d/1QJDLgrRBgbERE9Ad2j_qh5aLjr8f7p9-YsUIPwbuv7c/edit?tab=t.0#heading=h.g6o9zaxdzvm8">Download
+          Plan</a>
+      </div>
+    </div>
+
+
+
+
+    <!-- Paint house -->
+    <div class="pr-8 pb-8 bg-[rgb(86,213,91)]">
+
+      <!-- Heading -->
+      <div class="flex py-16">
+        <h1 class="ml-10 text-4xl">
+          Secure Your Luxurious <br> Lifestyle Today
+        </h1>
+      </div>
+
+      <!-- Image + Content Wrapper (Important Perent) -->
+      <div class="flex flex-col md:flex-row gap-11 items-start">
+
+        <!-- Left image -->
+        <img class="w-3/5 rounded-r-xl" src="very-big-image.avif" alt="very-big-image">
+
+        <!-- Right content (stikcy) -->
+        <div class="flex flex-col pl-8 md:sticky md:top-32 self-start">
+          <h2 class="text-3xl font-medium mb-4">
+            Limited Units Available – <br> Act Fast!
+          </h2>
+
+          <p class="font-medium mb-6">
+            Add paragraph text. Click “Edit Text” to update <br>
+            the font, size and more. To change and reuse <br>
+            text themes, go to Site Styles.
+          </p>
+
+          <button id="contact-now"
+            class="px-6 py-3 bg-white text-sm font-medium rounded-lg border border-black hover:bg-black hover:text-white w-fit">
+            Contact Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section> <!-- The biulding section end -->
+
+  <!-- Another image slider -->
+  <a href="amenities"></a>
+  <section id="amenities"> <!-- The amenities section end -->
+    <section
+      class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12 px-6 lg:px-20 py-16 lg:py-24">
+
+      <!-- Left content -->
+      <div class="max-w-md">
+        <h1 class="text-3xl lg:text-4xl font-medium mb-4">
+          Services & Amenities
+        </h1>
+        <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+          Extensive in-house amenities, staff and services elevate the
+          living experience
+        </p>
+      </div>
+
+      <!-- Right slider -->
+      <div class="relative w-full max-w-[450px] mx-auto lg:mx-0">
+
+        <!-- Left arrow -->
+        <button onclick="amenityPrev()" class="absolute left-2 text-red-600 lg:left-[-60px]
+             top-1/2 -translate-y-1/2
+             text-3xl z-10">
+          ←
+        </button>
+
+        <!-- Vieport -->
+        <div id="amenityViewport" class="overflow-hidden rounded-2xl h-[220px] sm:h-[260px] lg:h-[300px]">
+
+          <!-- Track -->
+          <div id="amenityTrack" class="flex h-full transition-transform duration-500 ease-in-out">
+
+            <img src="image10.avif" class="w-full min-w-full h-full object-cover" />
+            <img src="image11.avif" class="w-full min-w-full h-full object-cover" />
+            <img src="image12.avif" class="w-full min-w-full h-full object-cover" />
+            <img src="image13.avif" class="w-full min-w-full h-full object-cover" />
+
+          </div>
+        </div>
+
+        <!-- Right arrow -->
+        <button onclick="amenityNext()" class="absolute right-2 text-red-600 lg:right-[-60px]
+             top-1/2 -translate-y-1/2
+             text-3xl z-10">
+          →
+        </button>
+      </div>
+    </section>
+
+  </section> <!-- The biulding section end -->
+
+
+
+
+
+  <!-- Contact Form Section -->
+
+  
+ <!-- Contact Form Section -->
+<section id="contactform" class="bg-gray-100">
+
+  <!-- Top Contact Area -->
+  <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-12 lg:gap-40">
+
+    <!-- Left Content -->
+    <div class="flex flex-col lg:max-w-md">
+      <h1 class="text-3xl lg:text-[40px] font-medium mb-3">
+        Get in Touch
+      </h1>
+
+      <h2 class="text-lg lg:text-[21px] mb-4">
+        Schedule a Visit or Request More Information
+      </h2>
+
+      <p class="font-light">
+        Please submit your contact information and one of our
+        sales associates will be in touch with you shortly
+      </p>
+    </div>
+
+    <!-- Right Form -->
+    <form id="contactForm"
+      class="bg-white w-full max-w-xl p-6 lg:p-10 rounded-xl shadow-lg space-y-8">
+
+      <!-- First Name -->
+      <div>
+        <label class="text-sm font-medium">First name *</label>
+        <input type="text"
+          class="w-full border-b border-gray-400 focus:border-black outline-none py-2">
+      </div>
+
+      <!-- Last Name -->
+      <div>
+        <label class="text-sm font-medium">Last name *</label>
+        <input type="text"
+          class="w-full border-b border-gray-400 focus:border-black outline-none py-2">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="text-sm font-medium">Email *</label>
+        <input type="email"
+          class="w-full border-b border-gray-400 focus:border-black outline-none py-2">
+      </div>
+
+      <!-- Residence Size -->
+      <div>
+        <p class="text-sm font-medium mb-2">Residence size *</p>
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="residence"> 1 Bedroom
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="residence"> 2 Bedroom
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="residence"> 3 Bedroom
+          </label>
+        </div>
+      </div>
+
+      <!-- Price Range -->
+      <div>
+        <p class="text-sm font-medium mb-2">Price Range *</p>
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <label class="flex items-center gap-2">
+            <input type="radio" name="price"> $3M–10M
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="radio" name="price"> $10M+
+          </label>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit"
+        class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg transition">
+        Submit
+      </button>
+
+    </form>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="border-t border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12 flex flex-col lg:flex-row gap-12 lg:justify-between">
+
+      <!-- Address -->
+      <div>
+        <h1 class="text-2xl mb-4">The Angelo</h1>
+        <p>500 Terry Francine street</p>
+        <p>San Francisco CA</p>
+        <p class="mb-6">94158</p>
+
+        <p>Privacy Policy</p>
+        <p>Accessibility Statement</p>
+      </div>
+
+      <!-- Links & Social -->
+      <div>
+        <div class="flex flex-col leading-8 mb-8">
+          <a class="text-green-500" href="#">Home</a>
+          <a href="#">The Architects</a>
+          <a href="#">The Building</a>
+          <a href="#">Amenities</a>
+        </div>
+
+        <div class="flex gap-3 mb-4">
+          <img src="https://static.wixstatic.com/media/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png" class="w-6">
+          <img src="https://static.wixstatic.com/media/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png" class="w-6">
+          <img src="https://static.wixstatic.com/media/11062b_30de4e7217e64dfdadc3ea03beea7b94~mv2.png" class="w-6">
+        </div>
+
+        <span class="text-sm">
+          © 2026 by The Angelo. Built on landing page
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+  <!------- This is javascript ------->
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("hidden");
+      mobileMenu.classList.add("flex");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("flex");
+    });
+
+    // Image slider
+    const slider = document.getElementById("slider");
+    const container = document.getElementById("sliderContainer");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let index = 0;
+    const totalSlides = slider.children.length;
+
+    function updateSlide() {
+      const width = container.clientWidth;
+      slider.style.transform = `translateX(-${index * width}px)`;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % totalSlides;
+      updateSlide();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    });
+
+    window.addEventListener("resize", updateSlide);
+
+    // Bedroom slide effect
+    function setupAccordion(btnId, contentId) {
+      const btn = document.getElementById(btnId);
+      const content = document.getElementById(contentId);
+      const arrow = btn.querySelector("svg");
+
+      btn.addEventListener("click", () => {
+        if (content.classList.contains("max-h-0")) {
+          content.classList.remove("max-h-0");
+          content.classList.add("max-h-[1000px]");
+          arrow.classList.add("rotate-180");
+        } else {
+          content.classList.add("max-h-0");
+          content.classList.remove("max-h-[1000px]");
+          arrow.classList.remove("rotate-180");
+        }
+      });
+    }
+
+    setupAccordion("arrow-btn1", "content1");
+    setupAccordion("arrow-btn2", "content2");
+    setupAccordion("arrow-btn3", "content3");
+
+
+    // Another image slider
+    (() => {
+      const trackEl = document.getElementById("amenityTrack");
+      const viewportEl = document.getElementById("amenityViewport");
+      const TOTAL_ITEMS = 4;
+      let activeIndex = 0;
+
+      function slideWidth() {
+        return viewportEl.offsetWidth;
+      }
+
+      window.amenityNext = function () {
+        activeIndex++;
+        if (activeIndex >= TOTAL_ITEMS) {
+          activeIndex = 0;
+        }
+        trackEl.style.transform =
+          `translateX(-${activeIndex * slideWidth()}px)`;
+      };
+
+      window.amenityPrev = function () {
+        activeIndex--;
+        if (activeIndex < 0) {
+          activeIndex = TOTAL_ITEMS - 1;
+        }
+        trackEl.style.transform =
+          `translateX(-${activeIndex * slideWidth()}px)`;
+      };
+
+      // Resize safe (mobile rotate etc.)
+      window.addEventListener("resize", () => {
+        trackEl.style.transform =
+          `translateX(-${activeIndex * slideWidth()}px)`;
+      });
+    })();
+
+
+// Contact Form Validation
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let isValid = true;
+
+  // Inputs
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+
+  // Error Messages
+  const firstNameError = document.getElementById("firstNameError");
+  const lastNameError = document.getElementById("lastNameError");
+  const emailError = document.getElementById("emailError");
+  const residenceError = document.getElementById("residenceError");
+  const priceError = document.getElementById("priceError");
+
+  // 🔄 Reset all errors
+  document.querySelectorAll(".text-red-500").forEach(error => {
+    error.classList.add("hidden");
+  });
+
+  // First Name validation
+  if (!firstName.value.trim()) {
+    firstNameError.classList.remove("hidden");
+    isValid = false;
+  }
+
+  // Last Name validation
+  if (!lastName.value.trim()) {
+    lastNameError.classList.remove("hidden");
+    isValid = false;
+  }
+
+  // Email validation
+  if (!email.value.trim()) {
+    emailError.classList.remove("hidden");
+    isValid = false;
+  }
+
+  // Residence radio validation
+  if (!document.querySelector('input[name="residence"]:checked')) {
+    residenceError.classList.remove("hidden");
+    isValid = false;
+  }
+
+  // Price radio validation
+  if (!document.querySelector('input[name="price"]:checked')) {
+    priceError.classList.remove("hidden");
+    isValid = false;
+  }
+
+  // ✅ If everything is valid
+  if (isValid) {
+    alert("Form submitted successfully ✅");
+    form.reset();
+  }
+});
+
+
+
+
+
+
+
+    // <script src="./js/new.js" defer></script>
+</body>
+
+</html>
